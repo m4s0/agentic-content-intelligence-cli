@@ -10,10 +10,10 @@
     "require": [
       "tsconfig-paths/register"
     ],
-    "swc": true,
     "transpileOnly": true
   },
   "compilerOptions": {
+    "baseUrl": "./",
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
