@@ -7,12 +7,26 @@
     "dev": "ts-node src/index.ts",
     "test": "jest",
     "lint": "npm run prettier && npm run eslint",
-    "eslint": "eslint \"{src}/**/*.ts\"",
+    "eslint": "eslint \"src/**/*.ts\"",
     "eslint:fix": "npm run eslint -- --fix",
-    "prettier": "prettier --check \"{src}/**/*.ts\"",
-    "prettier:fix": "prettier --write \"{src}/**/*.ts\""
+    "prettier": "prettier --check \"src/**/*.ts\"",
+    "prettier:fix": "prettier --write \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.53",
+    "@langchain/core": "^0.3.72",
+    "@langchain/openai": "^0.6.9",
+    "@mendable/firecrawl-js": "^1.29.3",
+    "commander": "^14.0.0",
+    "dotenv": "^16.4.5",
+    "faiss-node": "^0.5.1",
+    "inquirer": "^12.9.3",
+    "langchain": "^0.3.31",
+    "ora": "^8.2.0",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
     "@types/node": "^24.2.0",
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
